@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceStatus_View">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_rtnHome_status"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="start"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="폰 동작 상태"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+    </RelativeLayout>
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginRight="15sp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1.2"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:text="안드로이드 버전"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_andoridVersion_status"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:gravity="center_vertical|right"
+            android:text="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1.2"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:text="WIFI"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_wifi_status"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1.2"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:text="LTE"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_cellular_status"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:gravity="center_vertical|right"
+            android:text="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1.2"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:text="SD카드 용량"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_storage_status"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:gravity="center_vertical|right"
+            android:text="1"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_columnWeight="1.2"
+            android:layout_height="50sp"
+            android:gravity="center_vertical"
+            android:text="동작중인앱/설치한앱"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_appCount_status"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="50sp"
+            android:gravity="center_vertical|right"
+            android:text="1"
+            android:textSize="18sp"/>
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lyr_contact_item">
+
+    <ImageView
+        android:id="@+id/img_user_item"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/user"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginVertical="8sp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_contName_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="user name"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/text_contDetail_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="detail" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_user_item"-->
+<!--        android:layout_width="50sp"-->
+<!--        android:layout_height="50sp"-->
+<!--        android:layout_marginHorizontal="20sp"-->
+<!--        android:layout_marginVertical="8sp"-->
+<!--        android:src="@drawable/user"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_contName_item"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15sp"-->
+<!--        android:layout_marginTop="6sp"-->
+<!--        android:maxLines="1"-->
+<!--        android:text="user name"-->
+<!--        android:textSize="21sp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/img_user_item"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_contDetail_item"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15sp"-->
+<!--        android:maxLines="1"-->
+<!--        android:text="detail"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/img_user_item"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text_contName_item" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
