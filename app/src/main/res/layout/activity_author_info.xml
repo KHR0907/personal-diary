@@ -55,7 +55,9 @@
             android:paddingBottom="100sp"
             android:paddingTop="20sp"
             android:text="@string/authorInfo"
-            android:textSize="18sp"/>
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
