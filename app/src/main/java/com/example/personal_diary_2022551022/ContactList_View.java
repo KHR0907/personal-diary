@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class ContactList_View extends AppCompatActivity {
-    DBModel dbManager;
+    DataBaseModel dbManager;
     SQLiteDatabase db;
     ImageButton rtnHomeBtn;
     ImageButton  fab;
@@ -30,7 +30,7 @@ public class ContactList_View extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_list);
 
-        dbManager = new DBModel(this);
+        dbManager = new DataBaseModel(this);
         db = dbManager.getWritableDatabase();
 
         rtnHomeBtn = findViewById(R.id.btn_rtnHome_contacts);

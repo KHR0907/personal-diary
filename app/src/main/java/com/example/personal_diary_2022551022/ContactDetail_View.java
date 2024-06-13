@@ -25,7 +25,7 @@ public class ContactDetail_View extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contact_detail);
         String phoneParam = getIntent().getStringExtra("phone");
-        DBModel dbManager = new DBModel(this);
+        DataBaseModel dbManager = new DataBaseModel(this);
         ContactVO contact = dbManager.getContact(phoneParam);
         EditText name = findViewById(R.id.edit_name);
         TextView phone = findViewById(R.id.edit_phone);

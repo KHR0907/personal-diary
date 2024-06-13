@@ -2,19 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mp_001"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/T_bg"
     tools:context=".MainActivity_View">
+
 
     <TextView
         android:id="@+id/text_mainTitle_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:text="Personal Diary"
+        android:textColor="@color/flower"
         android:textSize="32dp"
         android:textStyle="bold"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,45 +27,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8sp"
-        android:layout_marginTop="12sp"
+        android:layout_marginTop="70sp"
         android:columnCount="2"
         app:layout_constraintTop_toBottomOf="@id/text_mainTitle_main">
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            android:layout_margin="5sp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="5sp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:id="@+id/menu_contacts"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="30dp">
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
 
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/phone" />
+                    android:background="@drawable/m_phone" />
+
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Contacts"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:text="연락처"
+                    android:textAlignment="center"
                     android:textSize="18sp" />
+
+
             </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            android:layout_margin="5sp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="5sp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:id="@+id/menu_webSearch"
@@ -73,7 +85,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/webbrowser" />
+                    android:background="@drawable/m_internet" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,11 +97,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            android:layout_margin="5sp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="5sp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:id="@+id/menu_deviceStatus"
@@ -102,7 +114,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/info" />
+                    android:background="@drawable/m_info" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,11 +126,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
-            android:layout_margin="5sp"
+            android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1">
+            android:layout_margin="5sp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
             <LinearLayout
                 android:id="@+id/menu_authorInfo"
@@ -131,7 +143,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/man" />
+                    android:background="@drawable/m_author" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,6 +154,8 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+
     </GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

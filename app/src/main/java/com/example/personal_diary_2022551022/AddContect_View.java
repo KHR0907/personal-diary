@@ -88,8 +88,8 @@ public class AddContect_View extends AppCompatActivity{
                     toast.show();
                     return;
                 }
-                DBModel dbModel = new DBModel(AddContect_View.this);
-                dbModel.addContact(nameStr, phoneStr, emailStr, companyStr, titleStr);
+                DataBaseModel dataBaseModel = new DataBaseModel(AddContect_View.this);
+                dataBaseModel.addContact(nameStr, phoneStr, emailStr, companyStr, titleStr);
 
                 Intent intent = new Intent(AddContect_View.this, ContactList_View.class);
                 startActivity(intent);

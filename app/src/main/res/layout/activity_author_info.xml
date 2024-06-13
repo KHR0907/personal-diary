@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mp_007"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/T_bg"
     tools:context=".AuthorInfo_View">
 
     <LinearLayout
@@ -26,7 +28,7 @@
                 android:layout_height="40dp"
                 android:layout_marginStart="15dp"
                 android:layout_gravity="start"
-                android:background="@drawable/back" />
+                android:background="@drawable/u_back" />
 
             <TextView
                 android:layout_centerHorizontal="true"
