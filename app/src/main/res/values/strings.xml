@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Personal Diary</string>
-    <string name="authorInfo">안녕하세요! 개발자 김형래입니다. \n\n저희 [Personal Diary]를 이용해주셔서 감사합니다. 앱을 사용하지면서 개선할 사항이 있으시면 언제든 말씀해주세요 ! \n\n□ 이름 : 김형래 \n□ 학번 : 2022551022 \n□ 학과 : AI소프트웨어 \n□ 사는 곳 : 하와이\n□ 연락처 : 010-1004-1004 \n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. \n\n</string>
+    <string name="authorInfo">안녕하세요! 개발자 김형래입니다. \n\n저희 [Personal Diary]를 이용해주셔서 감사합니다. 앱을 사용하지면서 개선할 사항이 있으시면 언제든 말씀해주세요 ! \n\n□ 이름 : 김형래 \n□ 학번 : 2022551022 \n□ 학과 : AI소프트웨어 \n□ 사는 곳 : 하와이\n□ 연락처 : 010-1004-1004 \n\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. \n\n</string>
     <string name="addContact">add contact</string>
 </resources>
