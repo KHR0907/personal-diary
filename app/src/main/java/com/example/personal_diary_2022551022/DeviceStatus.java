@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
-public class DeviceStatus_View extends AppCompatActivity {
+public class DeviceStatus extends AppCompatActivity {
 
     boolean isWifiConn = false;
     boolean isMobileConn = false;

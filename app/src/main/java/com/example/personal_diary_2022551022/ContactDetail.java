@@ -13,7 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ContactDetail_View extends AppCompatActivity {
+public class ContactDetail extends AppCompatActivity {
     ImageButton rtnContactsListBtn;
     Button updateContactBtn;
     Button shareContactBtn;
@@ -54,7 +54,7 @@ public class ContactDetail_View extends AppCompatActivity {
             if (modifiedData.equals(originalData)) {
                 finish();
             } else {
-                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(ContactDetail_View.this)
+                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(ContactDetail.this)
                         .setTitle("경고")
                         .setMessage("수정한 내용이 저장되지 않습니다. 정말로 나가시겠습니까?")
                         .setPositiveButton("확인", new DialogInterface.OnClickListener() {

@@ -7,7 +7,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity_View extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity_View extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //intent to contacts activity
-                Intent intent = new Intent(MainActivity_View.this, ContactList_View.class);
+                Intent intent = new Intent(MainActivity.this, ContactList.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
 
@@ -33,7 +33,7 @@ public class MainActivity_View extends AppCompatActivity {
         menu_web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_View.this, WebSearch_View.class);
+                Intent intent = new Intent(MainActivity.this, WebSearch.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
@@ -41,7 +41,7 @@ public class MainActivity_View extends AppCompatActivity {
         menu_device.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_View.this, DeviceStatus_View.class);
+                Intent intent = new Intent(MainActivity.this, DeviceStatus.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
@@ -49,7 +49,7 @@ public class MainActivity_View extends AppCompatActivity {
         menu_author.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_View.this, AuthorInfo_View.class);
+                Intent intent = new Intent(MainActivity.this, AuthorInfo.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }

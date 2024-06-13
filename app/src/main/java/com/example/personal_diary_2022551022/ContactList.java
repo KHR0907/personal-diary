@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class ContactList_View extends AppCompatActivity {
+public class ContactList extends AppCompatActivity {
     DataBaseModel dbManager;
     SQLiteDatabase db;
     ImageButton rtnHomeBtn;
@@ -41,7 +41,7 @@ public class ContactList_View extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactList_View.this, AddContect_View.class);
+                Intent intent = new Intent(ContactList.this, ContactAdd.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +53,7 @@ public class ContactList_View extends AppCompatActivity {
         contactListAdapter.setOnItemClickListener(new ContactListAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(int pos) {
-                Intent intent = new Intent(ContactList_View.this, ContactDetail_View.class);
+                Intent intent = new Intent(ContactList.this, ContactDetail.class);
                 intent.putExtra("phone", contactListAdapter.mContactList.get(pos).getDetail());
                 startActivity(intent);
             }
@@ -61,7 +61,7 @@ public class ContactList_View extends AppCompatActivity {
         contactListAdapter.setOnLongItemClickListener(new ContactListAdapter.OnLongItemClickListener() {
             @Override
             public void onLongItemClick(int pos) {
-                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(ContactList_View.this)
+                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(ContactList.this)
                         .setTitle("연락처 삭제")
                         .setMessage("연락처를 삭제하시겠습니까?\n삭제된 연락처는 복구할 수 없습니다.")
                         .setPositiveButton("삭제", new DialogInterface.OnClickListener() {
@@ -69,10 +69,10 @@ public class ContactList_View extends AppCompatActivity {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 int result = dbManager.deleteContact(contactListAdapter.mContactList.get(pos).getDetail());
                                 if(result >= 0){
-                                    Toast.makeText(ContactList_View.this, "연락처가 삭제되었습니다.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ContactList.this, "연락처가 삭제되었습니다.", Toast.LENGTH_SHORT).show();
                                     contactListAdapter.setContactList(dbManager.getContactList());
                                 }else if(result == -3){
-                                    Toast.makeText(ContactList_View.this, "연락처 삭제에 실패했습니다.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ContactList.this, "연락처 삭제에 실패했습니다.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         })

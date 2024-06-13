@@ -5,7 +5,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AuthorInfo_View extends AppCompatActivity {
+public class AuthorInfo extends AppCompatActivity {
 
     ImageButton rtnHomeBtn;
     @Override

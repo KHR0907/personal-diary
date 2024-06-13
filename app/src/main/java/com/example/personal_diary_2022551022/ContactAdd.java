@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AddContect_View extends AppCompatActivity{
+public class ContactAdd extends AppCompatActivity{
 
     ImageButton rtnContactsListBtn;
     Button addContactBtn;
@@ -48,7 +48,7 @@ public class AddContect_View extends AppCompatActivity{
             if(nameStr.isEmpty() && phoneStr.isEmpty() && emailStr.isEmpty() && companyStr.isEmpty() && titleStr.isEmpty()) {
                 finish();
             }else{
-                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(AddContect_View.this)
+                AlertDialog.Builder msgBuilder = new AlertDialog.Builder(ContactAdd.this)
                         .setTitle("경고")
                         .setMessage("작성한 내용이 저장되지 않습니다. 정말로 나가시겠습니까?")
                         .setPositiveButton("확인", new DialogInterface.OnClickListener() {
@@ -79,19 +79,19 @@ public class AddContect_View extends AppCompatActivity{
                 String companyStr = company.getText().toString();
                 String titleStr = title.getText().toString();
                 if(nameStr.isEmpty() || phoneStr.isEmpty()) {
-                    Toast toast = Toast.makeText(AddContect_View.this, "이름과 전화번호는 필수 입력필드입니다.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(ContactAdd.this, "이름과 전화번호는 필수 입력필드입니다.", Toast.LENGTH_SHORT);
                     toast.show();
                     return;
                 }
                 if(phoneStr.length()<11){
-                    Toast toast = Toast.makeText(AddContect_View.this, "전화번호는 11자리 이상 입력해주세요.", Toast.LENGTH_SHORT);
+                    Toast toast = Toast.makeText(ContactAdd.this, "전화번호는 11자리 이상 입력해주세요.", Toast.LENGTH_SHORT);
                     toast.show();
                     return;
                 }
-                DataBaseModel dataBaseModel = new DataBaseModel(AddContect_View.this);
+                DataBaseModel dataBaseModel = new DataBaseModel(ContactAdd.this);
                 dataBaseModel.addContact(nameStr, phoneStr, emailStr, companyStr, titleStr);
 
-                Intent intent = new Intent(AddContect_View.this, ContactList_View.class);
+                Intent intent = new Intent(ContactAdd.this, ContactList.class);
                 startActivity(intent);
             }
         });

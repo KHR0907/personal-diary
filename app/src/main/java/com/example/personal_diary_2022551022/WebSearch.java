@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WebSearch_View extends AppCompatActivity {
+public class WebSearch extends AppCompatActivity {
 
     ImageButton rtnHomeBtn;
     WebView webView;
@@ -47,7 +47,7 @@ public class WebSearch_View extends AppCompatActivity {
                 if(!address.startsWith("http://")){ //editText 입력된 브라우저의 주소에 "http://" 없으면 붙쳐준다.
                     address = "http://" +address;
                 }
-                Toast.makeText(WebSearch_View.this, "Loading...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(WebSearch.this, "Loading...", Toast.LENGTH_SHORT).show();
 
                 webView.loadUrl(urlInput.getText().toString());
             }

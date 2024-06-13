@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/t_bg"
-    tools:context=".ContactList_View">
+    tools:context=".ContactList">
 
 
     <LinearLayout

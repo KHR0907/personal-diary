@@ -18,26 +18,26 @@
         android:theme="@style/Theme.Personal_Diary_2022551022"
         tools:targetApi="31">
         <activity
-            android:name=".AuthorInfo_View"
+            android:name=".AuthorInfo"
             android:exported="false" />
         <activity
-            android:name=".DeviceStatus_View"
+            android:name=".DeviceStatus"
             android:exported="false" />
         <activity
-            android:name=".WebSearch_View"
+            android:name=".WebSearch"
             android:exported="false" />
         <activity
-            android:name=".ContactList_View"
+            android:name=".ContactList"
             android:launchMode="singleTask"
             android:exported="false" />
         <activity
-            android:name=".ContactDetail_View"
+            android:name=".ContactDetail"
             android:exported="false" />
         <activity
-            android:name=".AddContect_View"
+            android:name=".ContactAdd"
             android:exported="false" />
         <activity
-            android:name=".MainActivity_View"
+            android:name=".MainActivity"
             android:launchMode="singleTask"
             android:exported="true">
             <intent-filter>
